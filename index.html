@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hackathon result">
+    <title>Template for Vaimo's Code in the Dark</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Source+Sans+Pro:wght@400;900&display=swap"
+        rel="preload"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Source+Sans+Pro:wght@400;900&display=swap"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
+    <link rel="preload" href="./images/pie1.webp" as="image" type="image/webp">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <button class="header__toggle-nav" title="Open menu">
+            <svg width="23" height="14" viewBox="0 0 23 14" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.0307691 1C0.0307691 0.447715 0.478484 0 1.03077 0H21.1662C21.7184 0 22.1662 0.447715 22.1662 1C22.1662 1.55228 21.7184 2 21.1662 2H1.03077C0.478485 2 0.0307691 1.55228 0.0307691 1ZM0.0307691 7C0.0307691 6.44772 0.478484 6 1.03077 6H21.1662C21.7184 6 22.1662 6.44772 22.1662 7C22.1662 7.55228 21.7184 8 21.1662 8H1.03077C0.478485 8 0.0307691 7.55228 0.0307691 7ZM1.03077 12C0.478484 12 0.0307691 12.4477 0.0307691 13C0.0307691 13.5523 0.478485 14 1.03077 14H21.1662C21.7184 14 22.1662 13.5523 22.1662 13C22.1662 12.4477 21.7184 12 21.1662 12H1.03077Z"
+                      fill="#282C34"/>
+            </svg>
+            <span aria-label="hidden">Menu</span>
+        </button>
+        <a href="/" class="header__logo" title="Go to home">
+            Buy my pie
+        </a>
+        <button class="header__cart" title="Open cart">
+            <span class="header__cart__content">
+                <svg width="27" height="21" viewBox="0 0 27 21" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.821533 1C0.821533 1.50391 1.23421 2 1.72943 2H5.58897L7.60128 14C7.8371 15.6055 9.48389 16 11.1228 16H22.6936C23.1652 16 23.6997 15.5156 23.6997 15C23.6997 14.4844 23.1652 14 22.6936 14H11.1228C9.61359 14 9.61359 12 9.61359 12H22.6936C24.3561 12 25.2565 11.2373 25.7121 9.67969L26.7182 4C26.7418 3.84766 26.3841 3 25.7121 3H8.10436L7.60128 1C7.39377 0 6.77604 0 5.59696 0H1.72943C1.23421 0 0.821533 0.507812 0.821533 1ZM10.8831 19.4952C10.8831 20.3333 11.5538 21 12.3971 21C13.2308 21 13.9015 20.3333 13.9015 19.4952C13.9015 18.6667 13.2308 18 12.3971 18C11.5538 18 10.8831 18.6667 10.8831 19.4952ZM20.4463 21C19.6031 21 18.9323 20.3333 18.9323 19.4952C18.9323 18.6667 19.6031 18 20.4463 18C21.28 18 21.9508 18.6667 21.9508 19.4952C21.9508 20.3333 21.28 21 20.4463 21Z"
+                      fill="#282C34"/>
+            </svg>
+            <ins class="header__cart__indicator"></ins>
+            </span>
+        </button>
+    </div>
+    <form class="header__search">
+        <label class="header__search__label">
+            <input type="text" class="header__search__input"
+                   placeholder="What are you looking for?"/>
+        </label>
+    </form>
+</header>
+<main class="content">
+    <section class="banner">
+        <h1 class="banner__title">Black Friday - 25 %</h1>
+        <h2 class="banner__subtitle">Tasty, sweet, excellent</h2>
+        <h3 class="banner__promo">Very tasty pies!</h3>
+        <div class="banner__carousel">
+            <div class="banner__carousel__img">
+                <img src="./images/pie1.webp" alt="Banner image" width="679" height="678"/>
+            </div>
+            <div class="banner__carousel__dots">
+                <button type="button"
+                        class="banner__carousel__dot banner__carousel__dot--is-active"
+                        title="Slide 1"
+                >
+                    <span aria-label="hidden">Dot 1</span>
+                </button>
+                <button type="button" class="banner__carousel__dot" title="Slide 1">
+                    <span aria-label="hidden">Dot 2</span>
+                </button>
+                <button type="button" class="banner__carousel__dot" title="Slide 1">
+                    <span aria-label="hidden">Dot 3</span>
+                </button>
+                <button type="button" class="banner__carousel__dot" title="Slide 1">
+                    <span aria-label="hidden">Dot 4</span>
+                </button>
+            </div>
+        </div>
+        <div class="banner__add-to">
+            <strong class="banner__add-to__price">12,90 €</strong>
+            <button class="banner__add-to__btn" title="Add to cart">
+                Add to cart
+            </button>
+        </div>
+    </section>
+    <section class="flavours">
+        <h1 class="section-title">Experience Flavours</h1>
+        <ul class="flavours__list">
+            <li class="flavours__item">
+                <a href="/" class="flavours__card" title="Flavour">
+                    <img src="./images/pie2.webp" alt="Flavour 1" title="Flavour 1" loading="lazy" width="219" height="219"/>
+                </a>
+            </li>
+            <li class="flavours__item">
+                <a href="/" class="flavours__card" title="Flavour">
+                    <img src="./images/pie3.webp" alt="Flavour 2" title="Flavour 2" loading="lazy" width="219" height="219"/>
+                </a>
+            </li>
+            <li class="flavours__item">
+                <a href="/" class="flavours__card" title="Flavour">
+                    <img src="./images/pie4.webp" alt="Flavour 3" title="Flavour 3" loading="lazy" width="219" height="219"/>
+                </a>
+            </li>
+            <li class="flavours__item">
+                <a href="/" class="flavours__card" title="Flavour">
+                    <img src="./images/pie5.webp" alt="Flavour 4" title="Flavour 4" loading="lazy" width="219" height="219"/>
+                </a>
+            </li>
+            <li class="flavours__item">
+                <a href="/" class="flavours__card" title="Flavour">
+                    <img src="./images/pie6.webp" alt="Flavour 5" title="Flavour 5" loading="lazy" width="219" height="219"/>
+                </a>
+            </li>
+            <li class="flavours__item">
+                <a href="/" class="flavours__card" title="Flavour">
+                    <img src="./images/pie7.webp" alt="Flavour 6" title="Flavour 6" loading="lazy" width="219" height="219"/>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="popular">
+        <h1 class="section-title">Popular Pie</h1>
+        <ul class="popular__list">
+            <li class="popular__item">
+                <div class="popular__card">
+                    <div class="popular__card__general">
+                        <a href="/"
+                           class="popular__card__img"
+                           title="Round Chocolate Truffle Cake"
+                        >
+                            <img src="./images/pie2.webp"
+                                 alt="Popular product"
+                                 title="Popular product"
+                                 loading="lazy"
+                                 width="219"
+                                 height="219"
+                            />
+                        </a>
+                        <div class="popular__card__content">
+                            <a href="/"
+                               class="popular__card__title"
+                               title="Round Chocolate Truffle Cake"
+                            >Round Chocolate Truffle Cake</a>
+                            <p class="popular__card__subtitle">Taste notes</p>
+                            <p class="popular__card__desc">Small description</p>
+                        </div>
+                    </div>
+                    <div class="popular__card__bottom">
+                        <strong class="popular__card__price">15,90 <sup>€</sup></strong>
+                        <button type="button" class="popular__card__cart" title="Add to cart">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 27 21" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0.821533 1C0.821533 1.50391 1.23421 2 1.72943 2H5.58897L7.60128 14C7.8371 15.6055 9.48389 16 11.1228 16H22.6936C23.1652 16 23.6997 15.5156 23.6997 15C23.6997 14.4844 23.1652 14 22.6936 14H11.1228C9.61359 14 9.61359 12 9.61359 12H22.6936C24.3561 12 25.2565 11.2373 25.7121 9.67969L26.7182 4C26.7418 3.84766 26.3841 3 25.7121 3H8.10436L7.60128 1C7.39377 0 6.77604 0 5.59696 0H1.72943C1.23421 0 0.821533 0.507812 0.821533 1ZM10.8831 19.4952C10.8831 20.3333 11.5538 21 12.3971 21C13.2308 21 13.9015 20.3333 13.9015 19.4952C13.9015 18.6667 13.2308 18 12.3971 18C11.5538 18 10.8831 18.6667 10.8831 19.4952ZM20.4463 21C19.6031 21 18.9323 20.3333 18.9323 19.4952C18.9323 18.6667 19.6031 18 20.4463 18C21.28 18 21.9508 18.6667 21.9508 19.4952C21.9508 20.3333 21.28 21 20.4463 21Z"
+                                          fill="#FFF"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="popular__item">
+                <div class="popular__card">
+                    <div class="popular__card__general">
+                        <a href="/"
+                           class="popular__card__img"
+                           title="Round Chocolate Truffle Cake"
+                        >
+                            <img src="./images/pie2.webp"
+                                 alt="Popular product"
+                                 title="Popular product"
+                                 loading="lazy"
+                                 width="219"
+                                 height="219"
+                            />
+                        </a>
+                        <div class="popular__card__content">
+                            <a href="/"
+                               class="popular__card__title"
+                               title="Round Chocolate Truffle Cake"
+                            >Round Chocolate Truffle Cake</a>
+                            <p class="popular__card__subtitle">Taste notes</p>
+                            <p class="popular__card__desc">Small description</p>
+                        </div>
+                    </div>
+                    <div class="popular__card__bottom">
+                        <strong class="popular__card__price">20,90 <sup>€</sup></strong>
+                        <button type="button" class="popular__card__cart" title="Add to cart">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 27 21" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0.821533 1C0.821533 1.50391 1.23421 2 1.72943 2H5.58897L7.60128 14C7.8371 15.6055 9.48389 16 11.1228 16H22.6936C23.1652 16 23.6997 15.5156 23.6997 15C23.6997 14.4844 23.1652 14 22.6936 14H11.1228C9.61359 14 9.61359 12 9.61359 12H22.6936C24.3561 12 25.2565 11.2373 25.7121 9.67969L26.7182 4C26.7418 3.84766 26.3841 3 25.7121 3H8.10436L7.60128 1C7.39377 0 6.77604 0 5.59696 0H1.72943C1.23421 0 0.821533 0.507812 0.821533 1ZM10.8831 19.4952C10.8831 20.3333 11.5538 21 12.3971 21C13.2308 21 13.9015 20.3333 13.9015 19.4952C13.9015 18.6667 13.2308 18 12.3971 18C11.5538 18 10.8831 18.6667 10.8831 19.4952ZM20.4463 21C19.6031 21 18.9323 20.3333 18.9323 19.4952C18.9323 18.6667 19.6031 18 20.4463 18C21.28 18 21.9508 18.6667 21.9508 19.4952C21.9508 20.3333 21.28 21 20.4463 21Z"
+                                          fill="#FFF"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="popular__item">
+                <div class="popular__card">
+                    <div class="popular__card__general">
+                        <a href="/"
+                           class="popular__card__img"
+                           title="Round Chocolate Truffle Cake"
+                        >
+                            <img src="./images/pie2.webp"
+                                 alt="Popular product"
+                                 title="Popular product"
+                                 loading="lazy"
+                                 width="219"
+                                 height="219"
+                            />
+                        </a>
+                        <div class="popular__card__content">
+                            <a href="/"
+                               class="popular__card__title"
+                               title="Round Chocolate Truffle Cake"
+                            >
+                                Round Chocolate Truffle Cake
+                            </a>
+                            <p class="popular__card__subtitle">Taste notes</p>
+                            <p class="popular__card__desc">Small description</p>
+                        </div>
+                    </div>
+                    <div class="popular__card__bottom">
+                        <strong class="popular__card__price">10,90 <sup>€</sup></strong>
+                        <button type="button" class="popular__card__cart" title="Add to cart">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 27 21" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0.821533 1C0.821533 1.50391 1.23421 2 1.72943 2H5.58897L7.60128 14C7.8371 15.6055 9.48389 16 11.1228 16H22.6936C23.1652 16 23.6997 15.5156 23.6997 15C23.6997 14.4844 23.1652 14 22.6936 14H11.1228C9.61359 14 9.61359 12 9.61359 12H22.6936C24.3561 12 25.2565 11.2373 25.7121 9.67969L26.7182 4C26.7418 3.84766 26.3841 3 25.7121 3H8.10436L7.60128 1C7.39377 0 6.77604 0 5.59696 0H1.72943C1.23421 0 0.821533 0.507812 0.821533 1ZM10.8831 19.4952C10.8831 20.3333 11.5538 21 12.3971 21C13.2308 21 13.9015 20.3333 13.9015 19.4952C13.9015 18.6667 13.2308 18 12.3971 18C11.5538 18 10.8831 18.6667 10.8831 19.4952ZM20.4463 21C19.6031 21 18.9323 20.3333 18.9323 19.4952C18.9323 18.6667 19.6031 18 20.4463 18C21.28 18 21.9508 18.6667 21.9508 19.4952C21.9508 20.3333 21.28 21 20.4463 21Z"
+                                          fill="#FFF"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="popular__bottom">
+            <button type="button" class="popular__show-more" title="Show more">
+                Show more cakes
+            </button>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <h2 class="footer__title">Subscribe our newsletter</h2>
+    <form class="footer__form">
+        <div class="footer__form__fieldset">
+            <label class="footer__form__label">
+                <input type="email"
+                       class="footer__form__input"
+                       placeholder="Enter email address"
+                />
+            </label>
+            <button type="submit" class="footer__form__btn">
+                Subscribe
+            </button>
+        </div>
+    </form>
+    <h3 class="footer__subtitle">Tasty, sweet, excellent</h3>
+</footer>
+</body>
+</html>
