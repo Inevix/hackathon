@@ -278,7 +278,8 @@ button {
 }
 
 .flavours__card {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .popular {
@@ -484,6 +485,11 @@ button {
         font-size: 1.2rem;
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    .flavours__list {
+        max-width: 64vw;
+        margin: 0 auto;
     }
 
     .footer__title,
